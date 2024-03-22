@@ -5,13 +5,19 @@
 //  Created by Herve Peroteau on 22/03/2024.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 @main
-struct TCA_TutorialApp: App {
+struct MyApp: App {
+    static let store = Store(initialState: CounterFeature.State()) {
+        CounterFeature()
+            ._printChanges()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CounterView(store: MyApp.store)
         }
     }
 }
