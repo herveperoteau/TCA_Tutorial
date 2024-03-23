@@ -17,6 +17,9 @@
 		622A5D6B2BAE22A100CA8F7E /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A5D6A2BAE22A100CA8F7E /* CounterView.swift */; };
 		62F38C5D2BAE300C008937C7 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F38C5C2BAE300C008937C7 /* CounterFeatureTests.swift */; };
 		62F38C952BAE37EE008937C7 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F38C942BAE37EE008937C7 /* NumberFactClient.swift */; };
+		62F38C972BAF1D6B008937C7 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F38C962BAF1D6B008937C7 /* AppFeature.swift */; };
+		62F38C9A2BAF1DAA008937C7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F38C992BAF1DAA008937C7 /* AppView.swift */; };
+		62F38C9C2BAF1FEC008937C7 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F38C9B2BAF1FEC008937C7 /* AppFeatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		62F38C5B2BAE2A38008937C7 /* TCA-Tutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TCA-Tutorial-Info.plist"; sourceTree = SOURCE_ROOT; };
 		62F38C5C2BAE300C008937C7 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		62F38C942BAE37EE008937C7 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		62F38C962BAF1D6B008937C7 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		62F38C992BAF1DAA008937C7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		62F38C9B2BAF1FEC008937C7 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +108,15 @@
 		622A5D392BAE1BCE00CA8F7E /* TCA_Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				62F38C982BAF1D76008937C7 /* Api */,
 				62F38C5B2BAE2A38008937C7 /* TCA-Tutorial-Info.plist */,
 				622A5D3A2BAE1BCE00CA8F7E /* TCA_TutorialApp.swift */,
 				622A5D3E2BAE1BCF00CA8F7E /* Assets.xcassets */,
 				622A5D402BAE1BCF00CA8F7E /* Preview Content */,
 				622A5D652BAE1D6D00CA8F7E /* CounterFeature.swift */,
 				622A5D6A2BAE22A100CA8F7E /* CounterView.swift */,
-				62F38C942BAE37EE008937C7 /* NumberFactClient.swift */,
+				62F38C962BAF1D6B008937C7 /* AppFeature.swift */,
+				62F38C992BAF1DAA008937C7 /* AppView.swift */,
 			);
 			path = TCA_Tutorial;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				62F38C5C2BAE300C008937C7 /* CounterFeatureTests.swift */,
+				62F38C9B2BAF1FEC008937C7 /* AppFeatureTests.swift */,
 			);
 			path = TCA_TutorialTests;
 			sourceTree = "<group>";
@@ -143,6 +152,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62F38C982BAF1D76008937C7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				62F38C942BAE37EE008937C7 /* NumberFactClient.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				622A5D662BAE1D6D00CA8F7E /* CounterFeature.swift in Sources */,
+				62F38C972BAF1D6B008937C7 /* AppFeature.swift in Sources */,
+				62F38C9A2BAF1DAA008937C7 /* AppView.swift in Sources */,
 				622A5D3B2BAE1BCE00CA8F7E /* TCA_TutorialApp.swift in Sources */,
 				622A5D6B2BAE22A100CA8F7E /* CounterView.swift in Sources */,
 				62F38C952BAE37EE008937C7 /* NumberFactClient.swift in Sources */,
@@ -292,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F38C9C2BAF1FEC008937C7 /* AppFeatureTests.swift in Sources */,
 				62F38C5D2BAE300C008937C7 /* CounterFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
